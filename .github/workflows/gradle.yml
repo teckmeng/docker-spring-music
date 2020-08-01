@@ -23,4 +23,12 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
-      run: ./gradlew build
+      run: ./gradlew clean assemble
+    - name: Push Docker Image to Harbor
+      uses: docker/build-push-action@v1
+      with: 
+        username: tmlee
+        password: p1votalD3mo
+        registry: https://harbor.techman.cloud
+        repository: demo
+        tag_with_ref: true
