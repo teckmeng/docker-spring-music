@@ -27,8 +27,7 @@ jobs:
     - name: Push Docker Image to Harbor
       uses: docker/build-push-action@v1
       with: 
-        username: tmlee
-        password: p1votalD3mo
-        registry: https://harbor.techman.cloud
-        repository: demo
+        username: teckmeng
+        password: flOrid@
+        repository: teckmeng/demo
         tag_with_ref: true
