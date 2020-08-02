@@ -27,7 +27,7 @@ jobs:
     - name: Push Docker Image to Harbor
       uses: docker/build-push-action@v1
       with: 
-        username: teckmeng
-        password: flOrid@
-        repository: teckmeng/demo
+        username: tmlee
+        password: p1votalD3mo
+        repository: demo
         tag_with_ref: true
