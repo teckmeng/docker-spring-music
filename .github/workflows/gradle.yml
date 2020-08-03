@@ -28,6 +28,6 @@ jobs:
       uses: christian-korneck/update-container-description-action@v1
       with:
         # the destination container repo (i.e. my-user/my-repo or myserver.com/my-user/my-repo)
-        destination_container_repo: demo/spring-music:latest
+        destination_container_repo: harbor.techman.cloud/demo/spring-music:latest
         # repo provider type (dockerhub, quay, harbor2)
-        provider: https://harbor.techman.cloud
+        provider: harbor2
